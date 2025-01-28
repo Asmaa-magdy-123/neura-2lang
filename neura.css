@@ -1,0 +1,819 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Dancing+Script:wght@500&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Oswald:wght@200..700&family=Readex+Pro:wght@160..700&display=swap');
+
+:root{
+    --gerColor: rgb(34, 33, 33);;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Readex Pro",sans-serif;
+    
+}
+
+body{
+    background-color: var(--color-black);
+
+}
+.main{
+    min-height: 100vh;
+    width: 100%;
+}
+.main-content{
+    /* min-height: 100vh; */
+    margin-top: 8%;
+
+}
+.navbar ul li a{
+color: white;
+}
+.navbar ul li{
+    padding: 20px;
+}
+.navbar ul li a:hover{
+    color: #e34d00;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #e34d00;
+}
+
+/*  .introduction{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+} */
+ .introduction h1{
+    font-size: 65px;
+    padding: 40px 0 50px 0;
+    color: #ffffff;
+    font-weight: bold;
+}
+ .introduction p{
+color: rgb(255, 255, 255);
+margin-top: 10px;
+}
+.introduction button, .getAQuote{
+    padding: 15px 30px;
+    border-radius: 40px;
+    border: 1px solid #e34d00;
+    background-color: #1d1c1c;
+    color: white;
+    transition: 0.4s;
+}
+.getAQuote{
+    padding: 20px 80px;
+}
+.introduction button:hover, .getAQuote:hover{
+background-color: #e34d00;
+color: white;
+}
+form{
+    display: flex;
+    align-items: center;
+}
+form input{
+    padding: 20px 20% 20px 20px;
+    border-radius: 40px;
+    margin-right: 2%;
+    background-color: var(--color-black);
+    border: 0.5px solid var(--color-orange);
+    color: #ffffff;
+}
+form input:focus{
+    outline: 0.1px thin var(--color-orange);
+}
+.introduction-image{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    /* overflow: hidden; */
+
+}
+
+.introduction-image #img-two{
+    width: 50%;
+    height: 60%;
+    
+    
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1); 
+        opacity: 1; 
+    }
+    50% {
+        transform: scale(1.2); 
+        opacity: 0.6; 
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.accordion-button:not(.collapsed){
+    color: #e34d00;
+}
+/* ------------------------------ part-2 */
+
+.part-2{
+    width: 100%;
+    min-height: 90vh;
+    margin-top: 5%;
+    
+    background-color: var(--color-black);
+    
+}
+.part-2-content{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 27px;
+}
+
+.cards{
+    width: 100%;
+    /* height: 50vh; */
+    margin-top: 5%;
+}
+.card-one{
+    /* border: 1px solid rgb(47, 47, 46); */
+    /* box-shadow: 1px 1px 5px orange; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    background-color: #242222;
+    /* align-items: center; */
+    justify-content: center;
+    
+}
+.card-one-contain{
+    width: 100%;
+    min-height: 100%;
+    /* padding: 30px; */
+}
+.card-one-content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 8%;
+}
+
+.card-one-content h1,.card-one-content p{
+    color: #ffffff;
+}
+.card-one-content p{
+    margin-top: 3%;
+    color: #cacaca;
+}
+.card-one-emogi{
+    width: 40%;
+    height: 20%;
+    /* margin-top: 5%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-one-emogi i{
+    color: rgb(66, 75, 75);
+    font-size: 50px;
+    transition: 0.4s;
+}
+
+.card-one-emogi i:hover{
+    color: var(--color-orange);
+    cursor: pointer;
+}
+.card-one-contain button{
+    background-color: #242222;
+    color: #ffffff;
+    border: none;
+    margin-top: 15%;
+    font-size: small;
+    font-weight: bold;
+    transition: 0.4s;
+
+}
+.card-one-contain button:hover{
+    color: var(--color-orange);
+    cursor: pointer;
+
+}
+/* --------------------part-3 */
+.part-3{
+    width: 100%;
+   min-height:60vh ;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+.image{
+    width: 100%;
+    height:100% ;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+.div-icon{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+}
+
+.icon i{
+    color: white;
+}
+.div-opacity{
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(49, 49, 49, 0.925);
+    position: absolute;
+    z-index: 1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.div-opacity i{
+    font-size: 25px;
+    background-color: #cacaca;
+    padding: 10px 15px;
+    border-radius: 60%;
+}
+.div-opacity i:hover, .icon {
+    cursor: pointer;
+}
+/* -------------------------------- part-4 */
+.part-4{
+    width: 100%;
+    min-height: 30vh;
+    margin-top: 3%;
+   
+    background-color: var(--gerColor);
+
+
+}
+.fours-divs{
+    background-color: var(--color-black);
+}
+.div-first{
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+/* .div-first-i{
+    width: 40%;
+    height: 45%;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+.div-first-i i{
+    font-size: 45px;
+    color: rgb(236, 237, 236);
+    border-radius: 50%;
+    border: 1px solid white;
+
+}
+
+.div-first-content span{
+    color: var(--color-orange);
+}
+.div-first-content h1,.div-first-content p{
+color: white;
+}
+.div-first-content h1{
+    font-size: 35px;
+}
+
+
+.div-first{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ------------------------------ part-5 --------------- */
+.part-5{
+    width: 100%;
+    min-height: 70vh;
+   
+    background-color: #201c1c;
+}
+.div-part-5{
+    width: 100%;
+    min-height:50vh;
+    
+    background-color: #201c1c;
+}
+/* .div-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #201c1c;
+    margin-top: 10%;
+
+    
+   
+} */
+
+.div-header h1{
+    color: #ffffff;
+    font-size: 46px;
+}
+.div-body{
+  
+   
+    /* margin-top: 12%; */
+    background-color: #201c1c;
+}
+.div-body-content{
+    /* width: 40%; */
+    /* min-height:600px; */
+    background-color: #201c1c;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.div-link-one{
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 2%; */
+    padding: 15px;
+    border-bottom: 3px solid var(--color-orange);
+
+}
+
+.div-link-one a{
+    font-size: 26px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 1%;
+}
+.div-link-one i{
+    font-size: 24px;
+}
+.div-body-content-paragraph{
+    color: #c1bfbf;
+    margin-top: 7%;
+}
+.div-body-image{
+    background-color: #201c1c;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.div-body-image img{
+    width: 100%;
+    height: 100%;
+}
+/* -------------------------------------- part-6 */
+
+.part-6{
+    width: 100%;
+    min-height: 50vh;
+   
+    margin-top: 5%;
+}
+.part-6-content{
+    width: 100%;
+    min-height: 50vh;
+   
+}
+/* .part-6-paragraph{
+   display: flex;
+     flex-direction: column;
+    align-items: center;
+
+} */
+.part-6-paragraph h1{
+    font-size: 45px;
+}
+.part-6-paragraph h1,.part-6-paragraph p{
+    color: white;
+}
+.part-6-paragraph .paragraph{
+    margin-top: 3%;
+
+}
+.paragraph p{
+    font-size: 17px;
+}
+
+
+.cards-part-6{
+    width: 100%;
+    min-height: 50vh;  
+    gap: 20px;
+
+
+}
+
+.card-part-6{
+     /* width: 27%; */
+     min-height:100% ;
+    background-color: #ffffff;
+    border-radius: 25px;
+  
+    background-color:rgb(30, 28, 28)
+}
+.down{
+    border: 3px solid var(--color-orange);
+    border-top: none;
+}
+.top{
+    border: 3px solid var(--color-orange);
+    border-bottom: none;
+}
+.div-card-into{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    padding-left: 20px;
+
+
+}
+.card-content-part-6 {
+    /* width: 74%; */
+    /* margin-top: 5%; */
+    padding: 20px;
+}
+.card-content-part-6 h1{
+    margin-top: 7%;
+    color: white;
+    transition: 0.4s;
+
+}
+.card-content-part-6 h1:hover{
+    color: var(--color-orange);
+    cursor: pointer;
+}
+.card-content-part-6 p{
+    margin-top: 8%;
+    color: rgb(195, 193, 193);
+
+}
+.card-content-part-6 .div-a{
+    margin-top: 30%;
+}
+.card-content-part-6 .div-a a ,.card-content-part-6 .div-a i {
+    color: white;
+    text-decoration: none;
+
+}
+.card-content-part-6 .div-a a:hover{
+    color: var(--color-orange);
+}
+
+.card-img-part-6{
+    width: 100%;
+    height: 100px;
+    
+    
+}
+
+/* ------------------------------------------------------- */
+.phone{
+    width: 100%;
+    min-height: 70vh;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+
+}
+.phone-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.phone-content{
+    /* width: 50%; */
+    margin-top: 70px;
+}
+.phone-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+.phone-content h1 , .phone-content p{
+    color: white;
+}
+.phone-content p{
+    margin-top: 5%;
+}
+.phone-cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 8%;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+.phone-card1{
+    /* width: 45%; */
+    border: 3px solid var(--color-orange);
+    border-top: none;
+    border-radius: 20px;
+    
+ 
+    
+    
+}
+.phone-card-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+/* ----------------------------------------------------------- etihcal ------------------------*/
+.ethical-part{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 10%;
+
+}
+.ethical-content{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.ethical-texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 10%; */
+
+    
+}
+.ethical-texts h2{
+    font-size: 35px;
+    color: rgb(241, 240, 240);
+
+    
+}
+.ethical-texts p{
+    margin-top: 5%;
+    color: rgb(241, 240, 240);
+
+}
+.accordion-button{
+   background-color: var(--gerColor);
+   color: white;
+   transition: 0.4s;
+}
+.accordion-item{
+    background-color: var(--gerColor);
+    color: white;
+}
+.accordion-button:not(.collapsed){
+    background-color: var(--gerColor);
+}
+.accordion-button:hover{
+    color: var(--color-orange);
+}
+.accordion-button:focus{
+    background-color: #e34d00;
+    border-color: #e34d00;
+    box-shadow: 1px 1px 5px #e34d00;
+    color: #1d1c1c;
+}
+
+.faq-section.v1 .accordion-btn{
+    background-color: #e34d00;
+}
+/* ------------------------------------------------------ founders ------------------------------- */
+.founders{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 5%;
+}
+.founders-content{
+    width: 100%;
+    min-height: 100%;
+    background-color: var(--color-black)
+   
+}
+.founders-texts{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.founders-texts h1{
+    color: white;
+    font-size: 42px;
+    
+}
+.founders-texts button{
+    padding: 5px 50px 5px 50px;
+    height: 70px;
+    background-color: var(--color-orange);
+    border-radius: 30px;
+    font-size: 20px;
+    color: white;
+    border: none;
+
+}
+
+.founder-1{
+    border: 3px solid var(--color-orange);
+    border-top: none;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.founder-1 h1 , .founder-1 h4{
+padding: 10px;
+color: white;
+}
+
+/* ----------------------------------------- slider */
+.slider{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+}
+.slider-container {
+    overflow: hidden;
+    width: 100%; /* Adjust this based on how wide you want the carousel to be */
+}
+
+.logo-slider {
+    display: flex;
+    width: 100%; /* Assuming each logo is 250px wide */
+    animation: slide 15s linear infinite;
+}
+
+.logo-slider img {
+    width: 14%; /* Adjust the size of each logo */
+    margin-right: 10%; 
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1250px); /* Total width of 5 logos */
+    }}
+ 
+
+/* ------------------------------------------------ ai robots  */
+.robots{
+    width: 100%;
+   
+    min-height: 100vh;
+    margin-top: 5%;
+}
+.robots-content{
+    width: 100%;
+    min-height: 100%;
+    background-color: var(--color-black)
+   
+}
+.robots-texts{
+   
+    padding: 20px;
+}
+.robots-texts h1{
+    color: white;
+    font-size: 42px;
+    
+}
+.robots-texts button{
+    padding: 5px 50px 5px 50px;
+    height: 70px;
+    background-color: var(--color-orange);
+    border-radius: 30px;
+    font-size: 20px;
+    color: white;
+    border: none;
+
+}
+
+.robots-2 img{
+    width: 100%;
+}
+.robots-2 button{
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background: none;
+    color: aliceblue;
+    border: none;
+}
+/* .robots-2{
+    border: 3px solid var(--color-orange);
+    border-top: none;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 450px;
+    
+} */
+
+.robots h1 , .robots h4{
+padding: 10px;
+color: white;
+color:aliceblue;
+}
+.robots-2{
+    border: 3px solid var(--color-orange);
+    border-bottom: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.robots-2 button{
+    color: aliceblue;
+   
+    
+}
+
+
+/* ----------------------------------------------- opinions */
+.opinions{
+    margin-top: 10%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.fa-star{
+    color: rgb(240, 240, 3);
+} 
+.card-para{
+    color: #ffffff;
+}
+
+.card{
+    height: 600px;
+    background-color: #201c1c;
+}
+.para-style{
+    font-size: 35px;
+}
+footer{
+    width: 100%;
+    min-height: 50vh;
+    /* background-color: #c1bfbf; */
+    background-image: url("./assets/footerIMG.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* backdrop-filter: grey; */
+background-color: #1d1c1c;
+}
+#ethic{
+    font-size: 45px;
+}
+@media (max-width:700px) {
+   .part-2-content h1, .part-2-content h2, .div-header h1, .part-6-paragraph h1, .phone-content h1, .ethical-texts h2, #ethic, .founders-texts h1{
+        font-size: 25px;
+    }
+    .robots-texts h1{
+        font-size: 22px;
+    }
+    .phone-img img , .image img{
+        width: 60%;
+        
+    }
+    .phone-img, .image{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .card-para {
+        font-size: 10px;
+    }
+     .pp p{
+        font-size: 12px;
+        line-height: 15px;
+     }
+    .card{
+        height: 50%;
+    }
+    .circle{
+        display: none;
+    }
+}

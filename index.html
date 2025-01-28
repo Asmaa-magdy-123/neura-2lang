@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="neura.css" />
+
+    <style>
+      body {
+        direction: ltr;
+      }
+      [lang="ar"] {
+        direction: rtl;
+        font-family: "Cairo", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main mt-4 overflow-hidden" lang="en">
+      <div class="container h-100">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand me-5" href="#">
+              <img src="./assets/Logo.svg" alt="" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse ms-5"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle active"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    data-key="home"
+                  >
+                    Home
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#" data-key="action"
+                        >Action</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-key="another"
+                        >Another action</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-key="something"
+                        >Something else here</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="#"
+                    data-key="about"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    data-key="services"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#" data-key="action"
+                        >Action</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-key="another"
+                        >Another action</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-key="something"
+                        >Something else here</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    data-key="blog"
+                  >
+                    Blog
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#" data-key="action"
+                        >Action</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-key="another"
+                        >Another action</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-key="something"
+                        >Something else here</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-key="price">Price</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    data-key="contact"
+                  >
+                    Contact
+                  </a>
+                  <ul class="dropdown-menu ">
+                    <li>
+                      <a class="dropdown-item" href="#" data-key="action"
+                        >Action</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-key="another"
+                        >Another action</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#" data-key="something"
+                        >Something else here</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <button id="languageToggle" class="btn me-2 ms-2 rounded-pill" style="background-color: #e34d00; font-size: 15px;">
+                ar
+              </button>
+              <button class="getAQuote fw-bold" data-key="getAQuote">
+                Get a Quote
+              </button>
+            </div>
+          </div>
+        </nav>
+        <div class="main-content h-100">
+          <div class="row">
+            <div
+              class="col-lg-7 col-md-12 col-sm-12 order-lg-1 order-md-2 order-sm-2"
+            >
+              <section class="introduction w-100">
+                <p data-key="aiPrompt">AI Prompt</p>
+                <h1 data-key="startJourney">
+                  Start Your AI
+                  <span
+                    class="p-2"
+                    data-key="goJourney"
+                    style="
+                      border-radius: 40% !important;
+                      background-color: #e34d00 !important;
+                      animation: pulse 1s infinite !important;
+                    "
+                    >Go</span
+                  >
+                  Journey With Us
+                </h1>
+
+                <form action="" method="get">
+                  <input
+                    type="email"
+                    placeholder="Enter Email"
+                    autocomplete="off"
+                  />
+                  <button data-key="startAI">
+                    Start AI <i class="fa fa-arrow-right"></i>
+                  </button>
+                </form>
+              </section>
+            </div>
+            <div
+              class="col-lg-5 col-md-12 col-sm-12 order-lg-2 order-md-1 order-sm-1"
+            >
+              <section class="introduction-image w-100 h-100">
+                <span
+                  class="p-3 circle d-lg-block d-md-block d-sm-none"
+                  style="
+                    animation: pulse 1s infinite;
+                    width: 20px;
+                    height: 10px;
+                    border-radius: 50%;
+                    color: #ffffff;
+                    background-color: #e34d00;
+                  "
+                ></span>
+                <span
+                  class="p-3 d-lg-block circle d-md-block d-sm-none"
+                  style="
+                    animation: pulse 1s infinite;
+                    width: 20px;
+                    height: 10px;
+                    border-radius: 50%;
+                    color: #ffffff;
+                    background-color: #e34d00;
+                    margin-top: 70%;
+                  "
+                ></span>
+
+                <img
+                  src="./assets/profile-img.png"
+                  class="img-fluid w-100 h-100"
+                  id="img-one"
+                  alt=""
+                  data-aos="zoom-in"
+                />
+                <img
+                  src="./assets/shap-1.svg"
+                  class="img-fluid w-100"
+                  id="img-two"
+                  alt=""
+                  data-aos="zoom-in"
+                />
+                <span
+                  class="p-3"
+                  style="
+                    animation: pulse 1s infinite;
+                    margin-top: 50%;
+                    width: 20px;
+                    height: 10px;
+                    border-radius: 50%;
+                    color: #ffffff;
+                    background-color: #e34d00;
+                  "
+                ></span>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="part-2 mb-2 overflow-hidden">
+      <div class="container h-100">
+        <div class="part-2-content">
+          <h1 data-key="advanced">Advanced Machine Learning</h1>
+          <h2 data-key="Techniques">Techniques AI</h2>
+        </div>
+
+        <div class="cards w-100">
+          <div class="row gap-0 row-gap-3">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card-one" data-aos="fade-up">
+                <div class="card-one-contain p-4">
+                  <div class="card-one-emogi">
+                    <i class="fa-solid fa-face-smile"></i>
+                  </div>
+
+                  <div class="card-one-content">
+                    <h1 data-key="artifica">Artifacia Sensitivo</h1>
+                    <p data-key="aIArtificial">
+                      AI Artificial Intelligence is a branch of computer science
+                      that focuses on the development of intelligent machines
+                    </p>
+                  </div>
+                  <button data-key="readMore">
+                    Read More <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card-one" data-aos="fade-down">
+                <div class="card-one-contain p-4">
+                  <div class="card-one-emogi">
+                    <i class="fa-brands fa-discord"></i>
+                  </div>
+
+                  <div class="card-one-content">
+                    <h1 data-key="artifica">Artifacia Sensitivo</h1>
+                    <p data-key="aIArtificial">
+                      AI Artificial Intelligence is a branch of computer science
+                      that focuses on the development of intelligent machines
+                    </p>
+                  </div>
+                  <button data-key="readMore">
+                    Read More <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card-one" data-aos="fade-up">
+                <div class="card-one-contain p-4">
+                  <div class="card-one-emogi">
+                    <i class="fa-solid fa-ghost"></i>
+                  </div>
+
+                  <div class="card-one-content">
+                    <h1 data-key="artifica">Artifacia Sensitivo</h1>
+                    <p data-key="aIArtificial">
+                      AI Artificial Intelligence is a branch of computer science
+                      that focuses on the development of intelligent machines
+                    </p>
+                  </div>
+                  <button data-key="readMore">
+                    Read More <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="part-3 overflow-hidden" id="part3">
+      <div class="div-opacity">
+        <i class="fa-solid fa-xmark" id="xmark"></i>
+        <iframe
+          width="760"
+          height="415"
+          src="https://www.youtube.com/embed/fzWzPXEhPvA?si=JEqfhA38egzIp7FJ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="container">
+        <div class="image" style="position: relative">
+          <div class="div-icon w-100">
+            <div class="icon">
+              <i
+                class="fa-solid fa-play fs-3 p-4"
+                id="play-icon"
+                style="border-radius: 50%; background-color: #e34d00"
+              ></i>
+            </div>
+          </div>
+          <img src="assets/img-1.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="part-4 overflow-hidden">
+      <div class="container">
+        <div class="fours-divs w-100">
+          <div class="row">
+            <div
+              class="col-lg-3 col-md-6 col-sm-12"
+              style="background-color: var(--gerColor)"
+            >
+              <div class="div-first">
+                <div class="div-first-i">
+                  <i class="fa-solid fa-robot p-4"></i>
+                </div>
+                <div class="div-first-content">
+                  <h1 class="count" data-count="400">320</h1>
+                  <p data-key="team">Team Member</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-sm-12"
+              style="background-color: var(--gerColor)"
+            >
+              <div class="div-first">
+                <div class="div-first-i">
+                  <i class="fa-solid fa-robot p-4"></i>
+                </div>
+                <div class="div-first-content">
+                  <h1 class="count" data-count="80">130</h1>
+                  <p data-key="team">Team Member</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-sm-12"
+              style="background-color: var(--gerColor)"
+            >
+              <div class="div-first">
+                <div class="div-first-i">
+                  <i class="fa-solid fa-robot p-4"></i>
+                </div>
+                <div class="div-first-content">
+                  <h1 class="count" data-count="10">50</h1>
+                  <p data-key="team">Team Member</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-sm-12"
+              style="background-color: var(--gerColor)"
+            >
+              <div class="div-first">
+                <div class="div-first-i">
+                  <i class="fa-solid fa-robot p-4"></i>
+                </div>
+                <div class="div-first-content">
+                  <h1 class="count" data-count="40">100</h1>
+                  <p data-key="team">Team Member</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="part-5 overflow-hidden">
+      <div class="container">
+        <div class="div-part-5">
+          <div class="row mb-5">
+            <div
+              class="col-lg-12 col-md-12 col-sm-12 order-lg-1 order-md-1 order-sm-1"
+            >
+              <div class="div-header mt-5 w-100 text-center">
+                <h1 data-key="revolutionizing">Revolutionizing Patient</h1>
+                <h1 data-key="care">Care AI Applications</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="div-body">
+            <div class="row">
+              <div
+                class="col-lg-6 col-md-12 col-sm-12 order-lg-2 order-md-3 order-sm-3"
+              >
+                <div class="div-body-content" data-aos="fade-right">
+                  <div class="div-link-one">
+                    <a class="linkOneContent" href="#" data-key="aiEducation"
+                      >AI in Education</a
+                    >
+                    <i
+                      class="fa-solid fa-arrow-right linkOneIcon"
+                      style="color: #ffffff"
+                    ></i>
+                  </div>
+                  <div class="div-link-one">
+                    <a class="linkOneContent" href="#" data-key="aiEducation"
+                      >AI in Education</a
+                    >
+                    <i
+                      class="fa-solid fa-arrow-right linkOneIcon"
+                      style="color: #ffffff"
+                    ></i>
+                  </div>
+                  <div class="div-link-one">
+                    <a class="linkOneContent" href="#" data-key="aiEducation"
+                      >AI in Education</a
+                    >
+                    <i
+                      class="fa-solid fa-arrow-right linkOneIcon"
+                      style="color: #ffffff"
+                    ></i>
+                  </div>
+                  <div class="div-link-one">
+                    <a class="linkOneContent" href="#" data-key="aiEducation"
+                      >AI in Education</a
+                    >
+                    <i
+                      class="fa-solid fa-arrow-right linkOneIcon"
+                      style="color: #ffffff"
+                    ></i>
+                  </div>
+                  <div class="div-link-one">
+                    <a class="linkOneContent" href="#" data-key="aiEducation"
+                      >AI in Education</a
+                    >
+                    <i
+                      class="fa-solid fa-arrow-right linkOneIcon"
+                      style="color: #ffffff"
+                    ></i>
+                  </div>
+
+                  <div class="div-body-content-paragraph">
+                    <p data-key="focus">
+                      focuses on the development of intelligent AI Artificial
+                      Intelligence is a branch of computer science that focuses
+                      on the development of intelligent machines that machines
+                      that can perform tasks that typically require human
+                      intelligence. This includes learning
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-6 col-md-12 col-sm-12 order-lg-3 order-md-2 order-sm-2"
+              >
+                <div class="div-body-image" data-aos="fade-left">
+                  <img src="assets/img-2.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------- part-6 ---------------------- -->
+
+    <section class="part-6 overflow-hidden">
+      <div class="container">
+        <div class="part-6-content">
+          <div class="row text-center">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <section class="part-6-paragraph">
+                <h1 data-key="understand">Understanding Neural</h1>
+                <h1 data-key="network">Networks Theory</h1>
+                <div class="paragraph">
+                  <p data-key="aIArtificial">
+                    AI Artificial Intelligence is a branch of computer science
+                    that
+                  </p>
+                  <p data-key="focus">
+                    focuses on the development of intelligent machines that
+                  </p>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div class="cards-part-6">
+            <div class="row gap-0 row-gap-3">
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card-part-6 down" data-aos="fade-up">
+                  <div class="div-card-into">
+                    <div class="card-img-part-6">
+                      <img src="assets/logo-1.svg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="card-content-part-6">
+                      <h1 data-key="detectica">Detectica</h1>
+                      <p data-key="aIArtificial">
+                        AI Artificial Intelligence is a branch of computer
+                        science that focuses on the
+                      </p>
+                      <div class="div-a">
+                        <a href="" data-key="readMore">Read More</a
+                        ><i
+                          class="fa-solid fa-arrow-right"
+                          style="color: rgb(234, 92, 9)"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card-part-6 top" data-aos="fade-down">
+                  <div class="div-card-into">
+                    <div class="card-img-part-6">
+                      <img src="assets/logo-2.svg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="card-content-part-6">
+                      <h1 data-key="detectica">Detectica</h1>
+                      <p data-key="aIArtificial">
+                        AI Artificial Intelligence is a branch of computer
+                        science that focuses on the
+                      </p>
+                      <div class="div-a">
+                        <a href="" data-key="readMore">Read More</a
+                        ><i
+                          class="fa-solid fa-arrow-right"
+                          style="color: rgb(234, 92, 9)"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card-part-6 down" data-aos="fade-up">
+                  <div class="div-card-into">
+                    <div class="card-img-part-6">
+                      <img src="assets/logo-3.svg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="card-content-part-6">
+                      <h1>Detectica</h1>
+                      <p>
+                        AI Artificial Intelligence is a branch of computer
+                        science that focuses on the
+                      </p>
+                      <div class="div-a">
+                        <a href="">Read More</a
+                        ><i
+                          class="fa-solid fa-arrow-right"
+                          style="color: rgb(234, 92, 9)"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card-part-6 top" data-aos="fade-down">
+                  <div class="div-card-into">
+                    <div class="card-img-part-6">
+                      <img src="assets/logo-4.svg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="card-content-part-6">
+                      <h1>Detectica</h1>
+                      <p>
+                        AI Artificial Intelligence is a branch of computer
+                        science that focuses on the
+                      </p>
+                      <div class="div-a">
+                        <a href="">Read More</a
+                        ><i
+                          class="fa-solid fa-arrow-right"
+                          style="color: rgb(234, 92, 9)"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------------------------------------------------- girl-phone------------------ -->
+
+    <section class="phone overflow-hidden">
+      <div class="container">
+        <div class="phone-container">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="phone-img" data-aos="fade-right">
+                <img src="assets/phone.png" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="phone-content">
+                <h1 data-aos="fade-left">
+                  AI for Social Good Leveraging Technology for Positive
+                </h1>
+                <p data-aos="fade-left">
+                  AI Artificial Intelligence is a branch of computer science
+                  that focuses on the development of intelligent machines that
+                  can perform tasks that typically require
+                </p>
+
+                <div class="phone-cards" data-aos="fade-down">
+                  <div class="row gap-0 row-gap-1">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="phone-card1">
+                        <div class="phone-card-content">
+                          <h1 style="font-size: 70px; color: rgb(212, 59, 3)">
+                            01
+                          </h1>
+                          <h1>Analyzar</h1>
+                          <p>
+                            AI Artificial Intelligence is a branch of computer
+                            science that focuses on the
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="phone-card1">
+                        <div class="phone-card-content">
+                          <h1 style="font-size: 70px; color: rgb(212, 59, 3)">
+                            02
+                          </h1>
+                          <h1>Analyzar</h1>
+                          <p>
+                            AI Artificial Intelligence is a branch of computer
+                            science that focuses on the
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="phone-card1">
+                        <div class="phone-card-content">
+                          <h1 style="font-size: 70px; color: rgb(212, 59, 3)">
+                            03
+                          </h1>
+                          <h1>Analyzar</h1>
+                          <p>
+                            AI Artificial Intelligence is a branch of computer
+                            science that focuses on the
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="phone-card1">
+                        <div class="phone-card-content">
+                          <h1 style="font-size: 70px; color: rgb(212, 59, 3)">
+                            04
+                          </h1>
+                          <h1>Analyzar</h1>
+                          <p>
+                            AI Artificial Intelligence is a branch of computer
+                            science that focuses on the
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------- ethical ------------------------------------------------- -->
+
+    <section class="ethical-part overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div
+              class="image rounded-5"
+              data-aos="fade-right"
+              style="overflow: hidden"
+            >
+              <img src="./assets/accordionPhone.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <h1 id="ethic" class="fw-bold" style="color: white">
+              The Impact of AI on Data Privacy and Security
+            </h1>
+            <p class="text-light mt-4">
+              AI Artificial Intelligence is a branch of computer science that
+              focuses on the development of intelligent machines that can
+              perform tasks that typically require
+            </p>
+            <div
+              class="accordion mt-5"
+              data-aos="fade-left"
+              id="accordionExample"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    How can AI enhance through chatbots?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong data-key="accordion"
+                      >This is the first item's accordion body.</strong
+                    >
+                    It is shown by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    What is the future of AI in autonomous vehicles?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong data-key="accordion"
+                      >This is the second item's accordion body.</strong
+                    >
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    What ethical challenges are AI development?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong data-key="accordion"
+                      >This is the third item's accordion body.</strong
+                    >
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    How does natural language contribute to AI?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong data-key="accordion"
+                      >This is the third item's accordion body.</strong
+                    >
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    How can AI benefit the finance industry?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong data-key="accordion"
+                      >This is the third item's accordion body.</strong
+                    >
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------------------- founders ------------------------- -->
+
+    <section class="founders mb-3 overflow-hidden">
+      <div class="container">
+        <div class="founders-content">
+          <div class="row">
+            <div class="founders-texts">
+              <div class="row w-100">
+                <div class="col-lg-10 col-md-6 col-sm-12">
+                  <h1>
+                    AI-driven Personalization <br />
+                    Customizing User
+                  </h1>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                  <button>View All</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="founders-img">
+            <div class="row row-gap-2">
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="founder-1" data-aos="fade-down">
+                  <img
+                    src="assets/founder-1.jpg"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                  <h1>Mark Parker</h1>
+                  <h4>Founder</h4>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="founder-1" data-aos="fade-up">
+                  <img
+                    src="assets/founder-2.jpg"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                  <h1>Tahmina Anny</h1>
+                  <h4>UI Designer</h4>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="founder-1" data-aos="fade-down">
+                  <img
+                    src="assets/founder-3.jpg"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                  <h1 class="">Mizan Rahman</h1>
+                  <h4>Web Developer</h4>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="founder-1" data-aos="fade-up">
+                  <img
+                    src="assets/founder-4.jpg"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                  <h1>Samantha Ray</h1>
+                  <h4>UX Designer</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------------------------------------------------------------  -->
+    <section class="slider overflow-hidden">
+      <div class="container">
+        <div class="slider-container">
+          <div class="logo-slider">
+            <img src="./assets/slider-1.svg" alt="Logo 1" />
+            <img src="./assets/slider-2.svg" alt="Logo 2" />
+            <img src="./assets/slider-3.svg" alt="Logo 3" />
+            <img src="./assets/slider-4.svg" alt="Logo 4" />
+            <img src="./assets/slider-5.svg" alt="Logo 5" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------------------------------------------------- -->
+    <!-- ------------------------------ Ai robots  -->
+    <section class="robots overflow-hidden">
+      <div class="container">
+        <div class="robots-content">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="robots-texts d-flex justify-content-between">
+                <div class="row w-100">
+                  <div class="col-lg-10 col-md-6 col-sm-12">
+                    <h1>
+                      Bridging the Virtual and <br />
+                      Physical Worlds
+                    </h1>
+                  </div>
+                  <div class="col-lg-2 col-md-6 col-sm-12">
+                    <button>View All</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="robots-img">
+            <div class="row row-gap-2">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="robots-2" data-aos="fade-down">
+                  <img src="assets/robot-1.jpg" class="img-fluid" alt="" />
+                  <h1>The Intersection of AI and</h1>
+                  <h4>Human Psychology</h4>
+                  <button>
+                    Read More
+                    <i
+                      class="fa-solid fa-arrow-right"
+                      style="color: rgb(234, 92, 9)"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="robots-2" data-aos="fade-top">
+                  <img src="assets/robot-2.jpg" class="img-fluid" alt="" />
+                  <h1>The Intersection of AI and</h1>
+                  <h4>Human Psychology</h4>
+                  <button>
+                    Read More
+                    <i
+                      class="fa-solid fa-arrow-right"
+                      style="color: rgb(234, 92, 9)"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="robots-2" data-aos="fade-down">
+                  <img src="assets/robot-3.jpg" class="img-fluid" alt="" />
+                  <h1>The Intersection of AI and</h1>
+                  <h4>Human Psychology</h4>
+                  <button>
+                    Read More
+                    <i
+                      class="fa-solid fa-arrow-right"
+                      style="color: rgb(234, 92, 9)"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-5 overflow-hidden">
+      <div
+        class="container h-100"
+        style="background-color: #ffffff00; padding-top: 10px"
+      >
+        <div class="row text-light mt-5">
+          <div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-down">
+            <div class="content-one h-100">
+              <img src="./assets/Logo.svg" class="img-fluid mt-4" alt="" />
+              <p class="mt-5 w-75">
+                Many desktop ublishing packages web page editors no Lorem Ipsum
+                a default model text
+              </p>
+              <div class="contact mt-5">
+                <i
+                  class="fa-brands fa-facebook p-2 rounded-5"
+                  style="border: 1px solid grey"
+                ></i>
+                <i
+                  class="fa-brands fa-linkedin p-2 rounded-5"
+                  style="border: 1px solid grey"
+                ></i>
+                <i
+                  class="fa-brands fa-instagram p-2 rounded-5"
+                  style="border: 1px solid grey"
+                ></i>
+                <i
+                  class="fa-brands fa-twitter p-2 rounded-5"
+                  style="border: 1px solid grey"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12" data-aos="fade-down">
+            <h2 class="mt-4 mb-4">Useful Links</h2>
+            <p>Software Corner</p>
+            <p>Application Center</p>
+            <p>Research Section</p>
+            <p>Developning Corner</p>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12" data-aos="fade-down">
+            <h2 class="mt-4 mb-4">Contact</h2>
+            <div class="d-flex">
+              <i class="me-2 fa-solid fa-phone" style="color: #e34d00"></i>
+              <p>+880 123 45 67 89</p>
+            </div>
+            <div class="d-flex">
+              <i class="me-2 fa-solid fa-envelope" style="color: #e34d00"></i>
+              <p>yourmail@gmail.com</p>
+            </div>
+            <div class="d-flex">
+              <i
+                class="me-2 fa-solid fa-location-dot"
+                style="color: #e34d00"
+              ></i>
+              <p>1212, Lav Vegas, The Veg Street</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script>
+      AOS.init({ duration: 1000 });
+    </script>
+    <script>
+      var icon = document.querySelector(".icon");
+      var playIcon = document.getElementById("play-icon");
+      var divOpacity = document.querySelector(".div-opacity");
+      var xmark = document.getElementById("xmark");
+
+      icon.addEventListener("mouseover", () => {
+        playIcon.style.backgroundColor = "white";
+        playIcon.style.color = "var(--color-orange)";
+      });
+      icon.addEventListener("mouseout", () => {
+        playIcon.style.backgroundColor = "var(--color-orange)";
+        playIcon.style.color = "white";
+      });
+
+      icon.addEventListener("click", () => {
+        divOpacity.style.display = "flex";
+      });
+      divOpacity.addEventListener("click", () => {
+        divOpacity.style.display = "none";
+      });
+
+      xmark.addEventListener("click", () => {
+        divOpacity.style.display = "none";
+      });
+
+      var counter = document.querySelectorAll(".count");
+      var part_3 = document.getElementById("part3");
+
+      counter.forEach((evl) => {
+        var target = evl.dataset.count;
+
+        var init_count = evl.innerText;
+        window.addEventListener("scroll", () => {
+          if (window.scrollY >= 1340) {
+            setInterval(() => {
+              if (init_count < target) {
+                init_count++;
+                evl.innerHTML = init_count + "<span>K+</span>";
+              } else if (init_count > target) {
+                init_count--;
+                evl.innerHTML = init_count + "<span>K+</span>";
+              }
+            }, 40);
+          }
+        });
+      });
+
+      var divLinkOne = document.querySelectorAll(".div-link-one");
+
+      divLinkOne.forEach((el) => {
+        el.addEventListener("mouseover", () => {
+          var linkOneContent = el.querySelector(".linkOneContent");
+          var linkOneIcon = el.querySelector(".linkOneIcon");
+          linkOneContent.style.color = "orange";
+          linkOneIcon.style.color = "orange";
+        });
+
+        el.addEventListener("mouseout", () => {
+          var linkOneContent = el.querySelector(".linkOneContent");
+          var linkOneIcon = el.querySelector(".linkOneIcon");
+          linkOneContent.style.color = "white";
+          linkOneIcon.style.color = "white";
+        });
+      });
+
+      var container = document.querySelector(".logo-slider");
+      var clone = container.innerHTML; // Clone the logos
+
+      for (var i = 0; i < 2; i++) {
+        container.innerHTML += clone;
+      }
+
+      const languageToggle = document.getElementById("languageToggle");
+const mainContent = document.querySelector(".main");
+
+// كائن الترجمة
+const translations = {
+  en: {
+    home: "Home",
+    about: "About",
+    services: "Services",
+    blog: "Blog",
+    price: "Price",
+    contact: "Contact",
+    getAQuote: "Get a Quote",
+    aiPrompt: "AI Prompt",
+    startJourney: "Start Your AI Go Journey With Us",
+    startAI: "Start AI",
+    enterEmail: "Enter Email",
+    action: "Action",
+    another: "Another",
+    something: "Something",
+    techniques: "Techniques AI",
+    advanced: "Advanced Machine Learning",
+    artifica: "artifica sensitivo",
+    aIArtificial:
+      " AI Artificial Intelligence is a branch of computer science that focuses on the",
+      goJourney:"Go",
+      aiEducation:"AI in Education",
+      revolutionizing:"Revolutionizing patient",
+      care:"Care AI Applications"
+  },
+  ar: {
+    home: "الرئيسية",
+    about: "من نحن",
+    services: "الخدمات",
+    blog: "المدونة",
+    price: "الاسعار",
+    contact: "التواصل",
+    getAQuote: "احصل على عرض",
+    aiPrompt: "منصة الذكاء الاصطناعي",
+    startJourney: "ابدأ رحلتك مع الذكاء الاصطناعي",
+    startAI: "بدأ الذكاء",
+    enterEmail: "أدخل البريد الإلكتروني",
+    action: "حدث",
+    another: "حدث اخر",
+    something: "شئ اخر",
+    techniques: "تقنيات الذكاء الاصطناعي",
+    advanced: "تقدم تعلم الاله",
+    artifica: "الذكاء الاصطناعي ",
+    aIArtificial:
+      "  الذكاء الاصطناعي الذكاء الاصطناعي هو فرع من فروع علوم الكمبيوتر التي تركز على تطوير الآلات الذكية",
+      goJourney:"بدايه",
+      aiEducation:"الذكاء الاصطناعي في التعلم",
+      revolutionizing:"الثوره الاصطناعيه",
+      care:"تطبيقات العنايه بالذكاء الاصطناعي"
+
+
+
+  },
+};
+
+// اللغة الافتراضية
+let currentLanguage = "en";
+
+// تحديث النصوص
+function updateTexts() {
+  const elements = document.querySelectorAll("[data-key]"); // جلب العناصر ذات data-key
+  elements.forEach((el) => {
+    const key = el.getAttribute("data-key"); // استخراج المفتاح
+    el.innerText = translations[currentLanguage][key]; // تعيين النص بناءً على اللغة
+
+    
+  });
+}
+var imgTwo= document.getElementById("img-two");
+// تبديل اللغة
+languageToggle.addEventListener("click", () => {
+  currentLanguage = currentLanguage === "en" ? "ar" : "en"; // تبديل اللغة
+  mainContent.setAttribute("lang", currentLanguage); // ضبط خاصية اللغة
+  document.body.style.direction = currentLanguage === "ar" ? "rtl" : "ltr";
+  if(currentLanguage=== "ar"){
+    imgTwo.style.transform= "scaleX(-1)";
+  }
+  else{
+    imgTwo.style.transform= "scaleX(1)";
+
+  } // ضبط الاتجاه
+  languageToggle.textContent =
+    currentLanguage === "en" ? "ar" : "en"; // تحديث زر التبديل
+  updateTexts(); // تحديث النصوص
+});
+
+// استدعاء التحديث عند تحميل الصفحة
+document.addEventListener("DOMContentLoaded", () => {
+  updateTexts(); // تعيين النصوص الافتراضية
+});
+
+    </script>
+  </body>
+</html>
